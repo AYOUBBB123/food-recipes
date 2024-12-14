@@ -22,7 +22,7 @@ export default function Details() {
         getRecipeDetails()
 
     }, [])
-    return <div className="container mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+    return <div className="flex justify-between items-center py-8 container mx-auto flex-col lg:flex-row gap-5 lg:gap-0">
         <div className="row-start-2 lg:row-start-auto">
             <div className="h-96 overflow-hidden rounded-xl group">
                 <img src={recipeDetailsData?.recipe?.image_url} className="w-full h-full object-cover block  group-hover:scale-105 duration-300" alt="" />
@@ -49,7 +49,7 @@ export default function Details() {
 
 
             <div>
-                <span className="text-2xl font-semibold text-cyan-800 ">
+                <span className="text-2xl font-semibold text-cyan-800 text-center ml-2 ">
                     Ingredients: <hr className="h-2 w-2" />
                 </span>
                 <ul className="flex flex-col gap-3">
