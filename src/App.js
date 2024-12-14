@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path = "/recipe-item/:id" element={<Details/>}/>
+                <Route path="*" element={<Home />} />
   
       </Routes>
     </BrowserRouter>
