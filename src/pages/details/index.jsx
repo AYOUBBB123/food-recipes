@@ -22,7 +22,7 @@ export default function Details() {
         getRecipeDetails()
 
     }, [])
-    return <div className="flex justify-between items-center py-8 container mx-auto flex-col lg:flex-row gap-5 lg:gap-0">
+    return <div className="mx-auto ml-[10%] py-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="row-start-2 lg:row-start-auto">
             <div className="h-96 overflow-hidden rounded-xl group">
                 <img src={recipeDetailsData?.recipe?.image_url} className="w-full h-full object-cover block  group-hover:scale-105 duration-300" alt="" />
