@@ -14,8 +14,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path = "/recipe-item/:id" element={<Details/>}/>
-        <Route path="*" element={<h1>404 - Page Not Found</h1>} />
-
       </Routes>
     </BrowserRouter>
   );
